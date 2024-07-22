@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+}
+div.reg{
+    background-color: #EEEEEE;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.message{
+    text-align: right;
+    margin-right:20%;
+}
+table.reg_form{
+    width: 100%;
+    border-spacing: 10px 30px;
+    padding-left:20px;
+}
+.btn{
+    color: #fff;
+    background-color: #000033;
+    font-size: 1.0em;
+    padding: 10px 30px;
+    margin-left:80%;
+}
+.btn:hover{
+    color: #fff;
+    background: #000099;
+}
+#send_button{
+    border:none;
+    margin-left:50px;
+    border-radius: 3px;
+    position: relative;
+    align-items: center;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: rgb(149,202,252);
+    background: linear-gradient(270deg, rgba(149,202,252,1) 0%, rgba(107,182,255,1) 100%);
+}
+#send_button:hover {
+    background: rgb(117,188,255);
+    background: linear-gradient(270deg, rgba(117,188,255,1) 0%, rgba(62,159,252,1) 100%);
+}   
+body{
+    margin-left:200px;
+    margin-right:200px;
+}   

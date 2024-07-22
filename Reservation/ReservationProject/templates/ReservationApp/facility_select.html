@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+{% load static %}
+<link rel="stylesheet" href="{% static "style.css" %}">
+<meta charset="utf-8">
+<title>施設選択画面</title>
+</head>
+<body>
+<div class="link_buttons">
+<a href="{% url 'reservationlist'%}" class="link_button1">予約一覧</a>
+<a href="{% url 'facility_select'%}" class="link_button2">施設選択</a>
+<a href="{% url 'Logout' %}" class="link_button3">ログアウト</a>
+</div>
+<hr>
+<div class="gamen">
+<h1 class="page_title">施設選択画面<h1>
+{% for facility in facility_list %}
+<p>{{ forloop.counter }}.<a href="{% url 'checklist' facility.facility_name%}">{{ facility.facility_name }}</a></p>
+<img class="pic" src="{% static facility.picture_url %}">
+{% endfor %}
+</div>
+</body>
+</html>

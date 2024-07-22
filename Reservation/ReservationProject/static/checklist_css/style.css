@@ -1,0 +1,78 @@
+.form_title{
+    margin: 0px auto;
+    font-size: 1.5em;/* フォントサイズ */
+    font-weight: bold;/* フォント太さ */
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    margin-bottom: 2em;
+    background-color: #ebf4f6;/* 背景色 */
+    border-left: 5px solid #318496;/* 左の線 */
+    border-bottom: 2px solid #cccccc;/* 下の線 */
+    color: #318496;/* フォント色 */
+}
+body{
+    margin-left:300px;
+    margin-right:300px;
+}
+#add_update_button{
+    border:none;
+    margin-left:350px;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: rgb(149,202,252);
+    background: linear-gradient(270deg, rgba(149,202,252,1) 0%, rgba(107,182,255,1) 100%);
+}
+#add_update_button:hover {
+    background: rgb(117,188,255);
+    background: linear-gradient(270deg, rgba(117,188,255,1) 0%, rgba(62,159,252,1) 100%);
+}
+
+.link_buttons{
+    .link_button1{
+        border:none;
+        width: 150px;
+        height: 50px;
+        align-items: center;
+        box-sizing: border-box;
+        color: #11f054;
+        background: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 30px;
+    }
+    .link_button2{
+        border:none;
+        width: 150px;
+        height: 50px;
+        align-items: center;
+        box-sizing: border-box;
+        color: #6ec3eb;
+        background: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .link_button3{
+        border:none;
+        width: 150px;
+        height: 50px;
+        align-items: center;
+        box-sizing: border-box;
+        color: #fa83e6;
+        background: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+}

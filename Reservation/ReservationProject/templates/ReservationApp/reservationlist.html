@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+{% load static %}
+<link rel="stylesheet" href="{% static "style.css" %}">
+<meta charset="utf-8">
+<title>予約一覧画面</title>
+</head>
+<body>
+<div class="link_buttons">
+<a href="{% url 'reservationlist'%}" class="link_button1">予約一覧</a>
+<a href="{% url 'facility_select'%}" class="link_button2">施設選択</a>
+<a href="{% url 'Logout' %}" class="link_button3">ログアウト</a>
+</div>
+<hr>
+<div class="gamen">
+<h1 class="page_title">予約一覧<h1>
+<table class="flat-table">
+<thead>
+<tr>
+<th>施設名</th>
+<th>チェックイン日付</th>
+<th>チェックアウト日付</th>
+<th colspan="2">編集</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+{% for reservation in reservationlist%}
+<tr>
+<td>{{ reservation.1}}</td>
+<td>{{reservation.0.check_in}}</td>
+<td>{{reservation.0.check_out}}</td>
+<td><a href="{% url 'update' reservation.0.pk %}">更新</a></td>
+<td><a href="{% url 'delete' reservation.0.pk %}">削除</a></td>
+<td><a href="{% url 'detaillist' reservation.0.pk %}">詳細</a></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body>
+</html>

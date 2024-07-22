@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+{% load static %}
+<link rel="stylesheet" href="{% static "style.css" %}">
+<meta charset="utf-8">
+<title>予約詳細一覧画面</title>
+</head>
+<body>
+<div class="link_buttons">
+<a href="{% url 'reservationlist'%}" class="link_button1">予約一覧</a>
+<a href="{% url 'facility_select'%}" class="link_button2">施設選択</a>
+<a href="{% url 'Logout' %}" class="link_button3">ログアウト</a>
+</div>
+<hr>
+<div class="gamen">
+<h1 class="page_title">予約詳細一覧<h1>
+<table class="flat-table">
+<thead>
+<tr>
+<th>部屋番号</th><th>部屋種別</th><th>宿泊日</th><th>宿泊人数</th>
+</tr>
+</thead>
+<tbody>
+{% for detail in details%}
+<tr>
+<td>{{ detail.room.room_number}}</td>
+<td>{{ detail.room.room_type.type_name}}</td>
+<td>{{detail.date}}</td>
+<td>{{detail.type_persons}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body>
+</html>

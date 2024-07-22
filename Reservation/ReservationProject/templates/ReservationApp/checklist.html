@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'checklist_css/style.css'%}">
+    <title>条件入力画面</title>
+</head>
+<body>
+    <div class="link_buttons" align="center">
+    <a href="{% url 'reservationlist'%}" class="link_button1">予約一覧</a>
+    <a href="{% url 'facility_select'%}" class="link_button2">施設選択</a>
+    <a href="{% url 'Logout' %}" class="link_button3">ログアウト</a>
+    </div>
+    <hr>
+    <h1 class="form_title">条件入力</h1>
+    <form method="POST">
+    {% csrf_token %}
+    <p>希望施設：{{ facility_name }}</p>
+    {{ form.as_p }}
+    <input type="submit" value="送信" id="add_update_button">
+    </form>
+
+</body>
+</html>

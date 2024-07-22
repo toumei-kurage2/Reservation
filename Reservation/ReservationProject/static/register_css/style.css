@@ -1,0 +1,52 @@
+.page_title{
+    margin: 0px auto;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    margin-bottom: 2em;
+    background-color: #ebf4f6;
+    border-left: 5px solid #318496;
+    border-bottom: 2px solid #cccccc;
+    color: #318496;
+}
+body{
+    margin-left:100px;
+    margin-right:100px;
+}
+ 
+div.reg{
+    background-color: #EEEEEE;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+ 
+table.reg_form{
+    width: 100%;
+    border-spacing: 10px 30px;
+    padding-left:20px;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000033;
+    font-size: 1.0em;
+    padding: 10px 30px;
+    margin-left: 80%;
+}
+
+.btn:hover{
+    color: #fff;
+    background: #000099;
+}
+
+.loglink{
+    color: #fff;
+    background-color: #000033;
+    font-size: 1.0em;
+    padding: 10px 30px;
+    margin-left: 80%;
+}
+    
+    
